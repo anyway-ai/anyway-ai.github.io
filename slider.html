@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="css/tailwind.css" data-precedence="next" />
+    
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: auto;
+      top: 25%;
+      padding-left: 32px;
+      padding-right: 32px;
+
+    }
+
+    swiper-slide {
+      text-align: left;
+      background: #fff;
+      width: 915px;
+      height: 499px;
+      padding: 52px;
+    }
+
+    swiper-slide img {
+      display: absolute;
+      width: auto;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+    slides-per-view="auto"  free-mode="true">
+    <swiper-slide class="grid grid-cols-2 gap-6 ">
+        <div class="row" style="align-items: center;justify-items: left;">
+          <h2 class="text-3xl">How we generated millions of images for security specific AI model</h2>
+          <br><br>
+          <h3 style="font-size: 16px;color: #9E9E9E;">Ensuring factory workers wear the correct safety gear is a challenging manual task. Anyway.ai created a synthetic dataset featuring workers in a Blue Flash Suit, which allowed a model to easily recognize this uniform after fine-tuning.</h3>
+          <br><br>
+          <b class="text-sm" style="font-weight: 500;">~800 Synthetic Images</b>
+          <br><br>
+          <a class="text-sm" style="font-weight: 500;" href="/">Read Case Study →</a>
+        </div>
+        <div class='row'>
+          <img src="https://any-way.ai/assets/img/id2.png" style="border-radius: 12px">
+        </div>
+    </swiper-slide>
+    <swiper-slide class="grid grid-cols-2 gap-6 swiper-slide-active">
+        <div class="row" style="align-items: center;justify-items: left;">
+          <h2 class="text-3xl">How we generated millions of images for security specific AI model</h2>
+          <br><br>
+          <h3 style="font-size: 16px;color: #9E9E9E;">Ensuring factory workers wear the correct safety gear is a challenging manual task. Anyway.ai created a synthetic dataset featuring workers in a Blue Flash Suit, which allowed a model to easily recognize this uniform after fine-tuning.</h3>
+          <br><br>
+          <b class="text-sm" style="font-weight: 500;">~800 Synthetic Images</b>
+          <br><br>
+          <a class="text-sm" style="font-weight: 500;" href="/">Read Case Study →</a>
+        </div>
+        <div class='row'>
+          <img src="https://any-way.ai/assets/img/id2.png" style="border-radius: 12px">
+        </div>
+    </swiper-slide>
+    <swiper-slide class="grid grid-cols-2 gap-6 ">
+        <div class="row" style="align-items: center;justify-items: left;">
+          <h2 class="text-3xl">How we generated millions of images for security specific AI model</h2>
+          <br><br>
+          <h3 style="font-size: 16px;color: #9E9E9E;">Ensuring factory workers wear the correct safety gear is a challenging manual task. Anyway.ai created a synthetic dataset featuring workers in a Blue Flash Suit, which allowed a model to easily recognize this uniform after fine-tuning.</h3>
+          <br><br>
+          <b class="text-sm" style="font-weight: 500;">~800 Synthetic Images</b>
+          <br><br>
+          <a class="text-sm" style="font-weight: 500;" href="/">Read Case Study →</a>
+        </div>
+        <div class='row'>
+          <img src="https://any-way.ai/assets/img/id2.png" style="border-radius: 12px">
+        </div>
+    </swiper-slide>
+
+  </swiper-container>
+<div class="swiper-pagination"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('mySwiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+  </script>
+</body>
+
+</html>
+
